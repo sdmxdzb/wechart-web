@@ -49,7 +49,7 @@ public class RoleServiceImpl implements RoleService {
 
 	@Override
 	public void removeRoleById(Long roleId) {
-		roleMapper.remove(roleId);
+		roleMapper.removeById(roleId);
 	}
 
 }

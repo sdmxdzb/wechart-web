@@ -3,6 +3,8 @@ package com.lanwon.wechart.system.entity;
 import java.io.Serializable;
 import java.util.Date;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 /**
  * @author dzb	
  * @date 2017年9月6日 
@@ -162,7 +164,8 @@ public class User implements Serializable {
 	public void setVisitCount(Integer visitCount) {
 		this.visitCount = visitCount;
 	}
-
+	
+	@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")  
 	public Date getLastVisitTime() {
 		return lastVisitTime;
 	}

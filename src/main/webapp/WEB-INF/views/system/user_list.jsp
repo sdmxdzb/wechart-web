@@ -17,21 +17,13 @@
 		        <span class="toolbar-item dialog-tool-separator"></span>
 		        <a href="javascript(0)" class="easyui-linkbutton" iconCls="icon-search" plain="true" onclick="query()">查询</a>
 			</form>
-			<shiro:hasPermission name="sys:user:save">
 	       		<a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-add" plain="true" onclick="save();">添加</a>
-	       		</shiro:hasPermission>
 	       		<span class="toolbar-item dialog-tool-separator"></span>
-	       		<shiro:hasPermission name="sys:user:remove">
 	            <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-remove" plain="true" data-options="disabled:false" onclick="removeUser()">删除</a>
-	        	</shiro:hasPermission>
 	        	<span class="toolbar-item dialog-tool-separator"></span>
-	        	<shiro:hasPermission name="sys:user:change">
 	            <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-edit" plain="true" onclick="change()">修改</a>
-	            </shiro:hasPermission>
 	            <span class="toolbar-item dialog-tool-separator"></span>
-	            <shiro:hasPermission name="sys:user:roleView">
         		<a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-hamburg-suppliers" plain="true" onclick="userForRole()">用户角色</a>
-        		</shiro:hasPermission>
         </div> 
         
   </div>

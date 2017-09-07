@@ -13,7 +13,7 @@
 				<td>用户名：</td>
 				<td>
 					<input type="hidden" name="id" value="${user.id}"/>
-					<input id="username" name="username" class="easyui-validatebox" data-options="width: 150,required:'required',validType:'length[4,20]'" value="${user.username}" /> 
+					<input id="username" type="text" name="username" class="easyui-validatebox" data-options="width: 150,required:'required',validType:'length[4,20]'" value="${user.username}" /> 
 				</td>
 			</tr>
 			<c:if test="${action != 'change'}">
@@ -43,11 +43,11 @@
 			</tr>
 			<tr>
 				<td>Email：</td>
-				<td><input type="text" name="email" value="${user.email }" class="easyui-validatebox" data-options="width: 150,validType:'email'"/></td>
+				<td><input type="text" name="email" value="${user.email}" class="easyui-validatebox" data-options="width: 150,validType:'email'"/></td>
 			</tr>
 			<tr>
 				<td>电话：</td>
-				<td><input type="text" name="mobile" value="${user.mobile }" class="easyui-validatebox"  data-options="width: 150"/></td>
+				<td><input type="text" name="mobile" value="${user.mobile}" class="easyui-validatebox"  data-options="width: 150"/></td>
 			</tr>
 			<tr>
 				<td>描述：</td>

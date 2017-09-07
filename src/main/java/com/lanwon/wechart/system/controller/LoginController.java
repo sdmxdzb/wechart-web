@@ -83,20 +83,20 @@ public class LoginController  {
             logger.info("对用户[" + username + "]进行登录验证..验证通过");
         } catch (UnknownAccountException uae) {
             logger.info("对用户[" + username + "]进行登录验证..验证未通过,未知账户");
-            //redirectAttributes.addFlashAttribute("message", "未知账户");
+            redirectAttributes.addFlashAttribute("message", "未知账户");
         } catch (IncorrectCredentialsException ice) {
             logger.info("对用户[" + username + "]进行登录验证..验证未通过,错误的凭证");
-           // redirectAttributes.addFlashAttribute("message", "密码不正确");
+            redirectAttributes.addFlashAttribute("message", "密码不正确");
         } catch (LockedAccountException lae) {
             logger.info("对用户[" + username + "]进行登录验证..验证未通过,账户已锁定");
-            //redirectAttributes.addFlashAttribute("message", "账户已锁定");
+            redirectAttributes.addFlashAttribute("message", "账户已锁定");
         } catch (ExcessiveAttemptsException eae) {
             logger.info("对用户[" + username + "]进行登录验证..验证未通过,错误次数过多");
-           // redirectAttributes.addFlashAttribute("message", "用户名或密码错误次数过多");
+           redirectAttributes.addFlashAttribute("message", "用户名或密码错误次数过多");
         } catch (AuthenticationException ae) {
             logger.info("对用户[" + username + "]进行登录验证..验证未通过,堆栈轨迹如下");
             ae.printStackTrace();
-           // redirectAttributes.addFlashAttribute("message", "用户名或密码不正确");
+            redirectAttributes.addFlashAttribute("message", "用户名或密码不正确");
         }
         //获取当前的Subject 
 		if (subject.isAuthenticated() || subject.isRemembered()) {

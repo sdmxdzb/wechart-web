@@ -68,5 +68,5 @@ public interface UserMapper extends BaseMapper<User>{
 	 * 
 	 * @param id
 	 */
-	public void remove(Long id);
+	public void removeById(Long id);
 }

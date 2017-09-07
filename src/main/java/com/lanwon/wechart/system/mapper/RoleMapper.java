@@ -51,5 +51,5 @@ public interface RoleMapper extends BaseMapper<Role>{
 	 * 
 	 * @param id
 	 */
-	public void remove(Long id);
+	public void removeById(Long id);
 }

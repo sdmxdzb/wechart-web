@@ -42,21 +42,16 @@ $(function(){
 	pagination:true,
 	rownumbers:true,
 	pageNumber:1,
-	pageSize : 20,
-	pageList : [20],
+	pageSize : 10,
+	pageList : [10,20,30],
 	singleSelect:true,
     columns:[[    
         {field:'id',title:'id',hidden:true},
-        {field:'id',title:'id',width:10},    
+      /*   {field:'id',title:'id',width:10},  */   
         {field:'cityName',title:'市',width:20},   
         {field:'cityCode',title:'市编码',width:20},
         {field:'areaName',title:'区',width:20},
         {field:'areaCode',title:'区编码',width:30},
-        /* {field:'gender',title:'性别',sortable:true,
-        	formatter : function(value, row, index) {
-       			return value==1?'男':'女';
-        	}
-        }, */
         {field:'community',title:'小区名称',sortable:true}
     ]],
     headerContextMenu: [

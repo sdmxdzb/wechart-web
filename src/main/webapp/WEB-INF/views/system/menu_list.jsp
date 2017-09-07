@@ -11,13 +11,9 @@
     	
     	<a href="#" class="easyui-linkbutton" plain="true" iconCls="icon-add" onclick="toSave();">添加</a>
     	<span class="toolbar-item dialog-tool-separator"></span>
-    	
-        
-        <a href="#" class="easyui-linkbutton" plain="true" iconCls="icon-remove" onclick="removeMenu()">删除</a>
-        <span class="toolbar-item dialog-tool-separator"></span>
-      
-  
         <a href="#" class="easyui-linkbutton" plain="true" iconCls="icon-edit" onclick="change()">修改</a>
+        <span class="toolbar-item dialog-tool-separator"></span>
+        <a href="#" class="easyui-linkbutton" plain="true" iconCls="icon-remove" onclick="removeMenu()">删除</a>
        
     </div>
 </div>

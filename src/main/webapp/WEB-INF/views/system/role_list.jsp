@@ -6,25 +6,19 @@
 <%@ include file="/WEB-INF/views/include/easyui.jsp"%>
 </head>
 <body class="easyui-layout" style="font-family:'微软雅黑';">   
-    <div data-options="region:'center',split:true,border:false,title:'角色列表'">
+    <div style="width:630px;" data-options="region:'center',split:true,border:false,title:'角色列表'">
     	<div id="tb" style="padding:5px;height:auto">
 		    <div>
-		    	<shiro:hasPermission name="sys:role:save">
 		    	<a href="#" class="easyui-linkbutton" iconCls="icon-add" plain="true" onclick="toSave();">添加</a>
-		    	</shiro:hasPermission>
 		    	<span class="toolbar-item dialog-tool-separator"></span>
-		    	 <shiro:hasPermission name="sys:role:remove">
-		        <a href="#" class="easyui-linkbutton" iconCls="icon-remove" plain="true" data-options="disabled:false"  onclick="removeRole()">删除</a>
-		        </shiro:hasPermission>
-		        <span class="toolbar-item dialog-tool-separator"></span>
-		         <shiro:hasPermission name="sys:role:change">
 		        <a href="#" class="easyui-linkbutton" iconCls="icon-edit" plain="true" onclick="change()">修改</a>
-		        </shiro:hasPermission>
+		        <span class="toolbar-item dialog-tool-separator"></span>
+		        <a href="#" class="easyui-linkbutton" iconCls="icon-remove" plain="true" data-options="disabled:false"  onclick="removeRole()">删除</a>
 		    </div>
 		</div>
 		<table id="dg"></table>
     </div>   
-    <div data-options="region:'east',split:true,border:false,title:'权限列表'" style="width:800%">
+    <div data-options="region:'east',split:true,border:false,title:'权限列表'" style="width:450%">
     	<div id="tg_tb" style="padding:5px;height:auto">
 		    <div>
 		    <shiro:hasRole name="admin">

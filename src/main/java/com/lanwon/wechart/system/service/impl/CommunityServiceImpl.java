@@ -36,7 +36,7 @@ public class CommunityServiceImpl implements CommunityService {
 
 	@Override
 	public void remove(Long id) {
-		communityMapper.remove(id);
+		communityMapper.delete(id);
 	}
 
 	@Override

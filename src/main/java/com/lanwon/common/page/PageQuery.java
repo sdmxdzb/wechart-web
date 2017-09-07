@@ -18,7 +18,7 @@ public class PageQuery implements Serializable{
 	/**
 	 * 每页默认的项数(20)
 	 */
-	public static final int DEFAULT_ITEMS_PER_PAGE = 20;
+	public static final int DEFAULT_ITEMS_PER_PAGE = 10;
 
 	/**
 	 * 滑动窗口默认的大小(7)

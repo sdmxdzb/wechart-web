@@ -83,7 +83,7 @@ public class UserController extends BaseController {
 	 * @param user
 	 * @param model
 	 */
-	@RequestMapping(value = "save", method = RequestMethod.POST, produces = "text/html;charset=UTF-8")
+	@RequestMapping(value = "save", method = RequestMethod.POST)
 	@ResponseBody
 	public String saveUser(@Valid User user, Model model) {
 		logger.debug("user:" + user);
@@ -125,7 +125,6 @@ public class UserController extends BaseController {
 	 * @param model
 	 * @return
 	 */
-	@RequiresPermissions("sys:user:change")
 	@RequestMapping(value = "change", method = RequestMethod.POST)
 	@ResponseBody
 	public String changeUser(@Valid @ModelAttribute @RequestBody User user, Model model) {
@@ -155,7 +154,6 @@ public class UserController extends BaseController {
 	 * @param model
 	 * @return
 	 */
-	@RequiresPermissions("sys:user:roleView")
 	@RequestMapping(value = "{userId}/userRole")
 	public String toUserRoleList(@PathVariable("userId") Long id, Model model) {
 		model.addAttribute("userId", id);

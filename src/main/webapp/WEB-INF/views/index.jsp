@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head>
-<title>运营管理系统</title>
+<title>微信后台管理系统</title>
 <%@ include file="/WEB-INF/views/include/easyui.jsp"%>
 <%@ include file="/WEB-INF/views/include/validation.jsp"%>
 <%@include file="../common/mytags.jsp"%>
@@ -24,7 +24,7 @@
         <div id="northPanel" data-options="region: 'north', border: false" style="height: 80px; overflow: hidden;">
             <div id="topbar" class="top-bar">
                 <div class="top-bar-left">
-                    <h1 style="margin-left: 10px; margin-top: 10px;color: #fff"><span style="color: #3F4752">运营管理系统</span></h1>
+                    <h1 style="margin-left: 10px; margin-top: 10px;color: #fff"><span style="color: #3F4752"></span></h1>
                 </div>
                 <div class="top-bar-right">
                     <div id="timerSpan"></div>
@@ -37,7 +37,7 @@
                 <div id="infobar">
                     <span class="icon-hamburg-user" style="padding-left: 25px; background-position: left center;">
                     <shiro:user>
-					欢迎[<shiro:principal/>]
+					欢迎您<span style="color:#F00">[<shiro:principal/>]</span>
 					</shiro:user> 
                     </span>
                 </div>
@@ -92,10 +92,11 @@
                 <div id="homePanel" data-options="title: '主页', iconCls: 'icon-hamburg-home'">
                     <div class="easyui-layout" data-options="fit: true">
                         <div data-options="region: 'north', split: false, border: false" style="height: 33px;">
-                           	首页内容
+                           
                         </div>
                         <div data-options="region: 'center', border: false" style="overflow: hidden;">
                             
+
                         </div>
                     </div>
                 </div>
@@ -113,11 +114,11 @@
             </div>
         </div>
 
-        <div data-options="region: 'south', title: '关于...', iconCls: 'icon-standard-information', collapsed: true, border: false" style="height: 70px;">
+      <!--   <div data-options="region: 'south', title: '关于...', iconCls: 'icon-standard-information', collapsed: true, border: false" style="height: 70px;">
             <div style="color: #4e5766; padding: 6px 0px 0px 0px; margin: 0px auto; text-align: center; font-size:12px; font-family:微软雅黑;">
                 
             </div>
-        </div>
+        </div> -->
 
     </div>
 <script>

@@ -112,7 +112,7 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	public void remove(Long id) {
-		userMapper.remove(id);
+		userMapper.removeById(id);
 	}
 
 	@Override

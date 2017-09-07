@@ -12,9 +12,9 @@
 		<tr>
 			<td>菜单名称：</td>
 			<td>
-				<input type="hidden" name="id" value="${menu.id }"/>
+				<input type="hidden" name="id" value="${menu.id}"/>
 				<input type="hidden" name="type" value="F"/>
-				<input id="name" name="name" type="text" value="${menu.name }" class="easyui-validatebox" data-options="width: 180,required:'required',validType:'length[2,20]'"/>
+				<input id="name" name="name" type="text" value="${menu.name}" class="easyui-validatebox" data-options="width: 180,required:'required',validType:'length[2,20]'"/>
 			</td>
 		</tr>
 		<tr>

@@ -87,7 +87,10 @@
 		</trim>
 	</select>
 	<!-- 保存 -->
-	<insert id="save" parameterType="com.lanwon.wechart.system.entity.User">
+	<insert id="saveUser" parameterType="com.lanwon.wechart.system.entity.User">
+		<!--  <selectKey keyProperty="id" resultType="int" order="BEFORE">  
+            select LAST_INSERT_ID()  
+        </selectKey>  --> 
 		insert into sys_user
 		<trim prefix="(" suffix=")" suffixOverrides=",">
 			<if test="id != null">

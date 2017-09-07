@@ -203,7 +203,7 @@
   		FROM
     	sys_menu p 
     	INNER JOIN sys_role_menu rp 
-      	ON p.id = rp.permission_id 
+      	ON p.id = rp.menu_id 
     	INNER JOIN sys_role r 
       	ON r.id = rp.ROLE_ID 
     	INNER JOIN sys_user_role ur 
