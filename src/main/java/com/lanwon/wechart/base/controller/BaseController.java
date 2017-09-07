@@ -27,13 +27,7 @@ import com.lanwon.wechart.base.entity.DataGrid;
 import com.lanwon.wechart.base.entity.LogActor;
 
 /**
- * 
- * Function:BaseController. <br/>
- * 
- * @date:2016年5月13日 下午1:40:38 <br/>
- * @author weiguo21
- * @version:
- * @since:JDK 1.7
+ * controller基础类 
  */
 @Controller
 public class BaseController {
