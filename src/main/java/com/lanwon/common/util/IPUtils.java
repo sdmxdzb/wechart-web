@@ -13,13 +13,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * 
- * Function:获取客户端IP. <br/>
- * Date: 2016年4月24日 上午11:20:14 <br/>
- * 
- * @author weiguo21
- * @version
- * @since JDK 1.7
- * @see
+ * @see 获取客户端IP. 
  */
 public class IPUtils {
 	private static final Logger logger = LoggerFactory.getLogger(IPUtils.class);

@@ -25,6 +25,8 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+
+import com.lanwon.aop.shiro.ExtendCaptchaToken;
 import com.lanwon.wechart.system.entity.User;
 import com.lanwon.wechart.system.service.UserService;
 
@@ -73,7 +75,7 @@ public class LoginController  {
         }  
 		 Subject subject = SecurityUtils.getSubject();
         //验证  
-        UsernamePasswordToken token = new UsernamePasswordToken(user.getUsername(), user.getPassword());  
+		 ExtendCaptchaToken token = new ExtendCaptchaToken(user.getUsername(), user.getPassword(),false,"","");  
         token.setRememberMe(false);
         try {
             logger.info("对用户[" + username + "]进行登录验证..验证开始");
@@ -98,10 +100,6 @@ public class LoginController  {
         }
         //获取当前的Subject 
 		if (subject.isAuthenticated() || subject.isRemembered()) {
-			//把当前用户放入session  
-           // Session session = subject.getSession();  
-            //List<User> list = userService.query(user);  
-            //session.setAttribute("user",list.get(0)); 
 			return "index" ;
 		}else{
 			token.clear();  

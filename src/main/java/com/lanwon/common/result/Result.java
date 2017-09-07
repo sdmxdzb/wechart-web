@@ -2,7 +2,10 @@ package com.lanwon.common.result;
 
 import org.apache.commons.httpclient.HttpStatus;
 
-
+/***
+ * 
+ * 返回状态结果值
+ * **/
 public class Result {
 
 	/**

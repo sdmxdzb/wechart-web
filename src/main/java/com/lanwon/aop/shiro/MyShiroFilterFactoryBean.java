@@ -24,7 +24,8 @@ import java.util.Set;
  * @date 2017年9月6日 
  * 
  */
-public class MyShiroFilterFactoryBean extends ShiroFilterFactoryBean {  
+public class MyShiroFilterFactoryBean extends ShiroFilterFactoryBean {
+		
     // ShiroFilter将直接忽略的请求  
     private Set<String> ignoreExt;  
   
