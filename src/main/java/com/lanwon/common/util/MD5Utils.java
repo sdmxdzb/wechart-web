@@ -1,4 +1,3 @@
-
 package com.lanwon.common.util;
 
 import java.io.File;
@@ -107,8 +106,8 @@ public class MD5Utils {
 	}
 
 	// 测试
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
 		System.out.println(MD5Utils.getStringMD5("admin123"));// 21232f297a57a5a743894a0e4a801fc3
 		System.out.println(MD5Utils.hash("123456"));// 21232f297a57a5a743894a0e4a801fc3
-	}
+	}*/
 }

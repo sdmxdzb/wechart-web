@@ -10,15 +10,15 @@ import java.util.Random;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import org.apache.commons.lang3.StringEscapeUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.log4j.Logger;
+
 
 /**
  * Function: 字符串工具类，用于实现一些字符串的常用操作. <br/>
  */
 public class StringUtils extends org.apache.commons.lang3.StringUtils {
 	
-	private static final Logger logger=LoggerFactory.getLogger(StringUtils.class);
+	private static final Logger logger=Logger.getLogger(StringUtils.class);
 	
 
 	public static final String NUMBERS_AND_LETTERS = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -604,8 +604,8 @@ public class StringUtils extends org.apache.commons.lang3.StringUtils {
 
 	}
 
-	public static void main(String[] args) throws UnsupportedEncodingException {
+	/*public static void main(String[] args) throws UnsupportedEncodingException {
 		StringUtils.encode(null);
 		logger.debug("汉字数:"+StringUtils.getWordsCount("你好我们"));;
-	}
+	}*/
 }

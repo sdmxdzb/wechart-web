@@ -5,18 +5,17 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.InetAddress;
 import java.net.NetworkInterface;
-
 import javax.servlet.http.HttpServletRequest;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.log4j.Logger;
+
 
 /**
  * 
  * @see 获取客户端IP. 
  */
 public class IPUtils {
-	private static final Logger logger = LoggerFactory.getLogger(IPUtils.class);
+	private static final Logger logger = Logger.getLogger(IPUtils.class);
 
 	/**
 	 * 获取IP
@@ -149,7 +148,7 @@ public class IPUtils {
 		return macAddress;
 	}
 
-	public static void main(String[] args) throws Exception {
+/*	public static void main(String[] args) throws Exception {
 		logger.debug("Local MAC:" + IPUtils.getLocalMAC());
-	}
+	}*/
 }
